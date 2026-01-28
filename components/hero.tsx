@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useI18n } from "@/lib/i18n"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Twitter, Play } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Facebook, Play } from "lucide-react"
 import { useState } from "react"
 import React from "react"
 import { useContactInfo } from "@/hooks/use-portfolio-data"
@@ -89,13 +89,13 @@ export function HeroSection() {
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://Facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10"
-                  aria-label="Twitter"
+                  aria-label="Facebook"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <Facebook className="h-5 w-5" />
                 </a>
               </div>
             </div>

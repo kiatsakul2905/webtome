@@ -21,7 +21,7 @@ const translations = {
     
     // Hero
     "hero.greeting": "Hello, I'm",
-    "hero.name": "John Doe",
+    "hero.name": "Kiatsakul Paiyasen",
     "hero.role": "Full Stack Developer",
     "hero.description": "I build accessible, pixel-perfect digital experiences for the web. Passionate about creating beautiful and functional applications.",
     "hero.cta": "View My Work",
@@ -72,7 +72,7 @@ const translations = {
     
     // Hero
     "hero.greeting": "สวัสดีครับ, ผมชื่อ",
-    "hero.name": "ทดสอบ",
+    "hero.name": "เกียรติสกุล ไพยเสน",
     "hero.role": "Full Stack Developer",
     "hero.description": "ผมสร้างประสบการณ์ดิจิทัลที่เข้าถึงได้และสมบูรณ์แบบสำหรับเว็บ มีความหลงใหลในการสร้างแอปพลิเคชันที่สวยงามและใช้งานได้จริง",
     "hero.cta": "ดูผลงานของผม",

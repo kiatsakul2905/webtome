@@ -28,7 +28,7 @@ export async function PUT(request: Request) {
       email,
       github_url,
       linkedin_url,
-      twitter_url,
+      Facebook_url,
       address_en,
       address_th,
       is_active,
@@ -49,7 +49,7 @@ export async function PUT(request: Request) {
           email = ${email || null},
           github_url = ${github_url || null},
           linkedin_url = ${linkedin_url || null},
-          twitter_url = ${twitter_url || null},
+          Facebook_url = ${Facebook_url || null},
           address_en = ${address_en || null},
           address_th = ${address_th || null},
           is_active = ${is_active !== undefined ? is_active : true}

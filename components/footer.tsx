@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Github, Linkedin, Twitter, Mail, Phone, User, Loader2, CheckCircle } from "lucide-react"
+import { Github, Linkedin, Facebook, Mail, Phone, User, Loader2, CheckCircle } from "lucide-react"
 
 export function Footer() {
   const { language, t } = useI18n()
@@ -32,13 +32,13 @@ export function Footer() {
     social: {
       github: dbContactInfo.github_url || "",
       linkedin: dbContactInfo.linkedin_url || "",
-      twitter: dbContactInfo.twitter_url || "",
+      Facebook: dbContactInfo.Facebook_url || "",
     },
   } : {
     name: { en: "Contact Us", th: "ติดต่อเรา" },
     email: "",
     phone: "",
-    social: { github: "", linkedin: "", twitter: "" },
+    social: { github: "", linkedin: "", Facebook: "" },
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -212,13 +212,13 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href={contactInfo.social.twitter}
+                href={contactInfo.social.Facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-background border border-border text-muted-foreground hover:text-foreground hover:border-foreground transition-colors"
-                aria-label="Twitter"
+                aria-label="Facebook"
               >
-                <Twitter className="h-5 w-5" />
+                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>

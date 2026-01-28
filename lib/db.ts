@@ -89,7 +89,7 @@ export interface ContactInfo {
   address_th: string | null
   github_url: string | null
   linkedin_url: string | null
-  twitter_url: string | null
+  Facebook_url: string | null
   is_active: boolean
   created_at?: string
   updated_at?: string

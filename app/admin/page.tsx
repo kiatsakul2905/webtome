@@ -17,7 +17,7 @@ export default function AdminSettings() {
     email: "",
     github_url: "",
     linkedin_url: "",
-    twitter_url: "",
+    Facebook_url: "",
     address_en: "",
     address_th: "",
     is_active: true,
@@ -35,7 +35,7 @@ export default function AdminSettings() {
         email: contactInfo.email || "",
         github_url: contactInfo.github_url || "",
         linkedin_url: contactInfo.linkedin_url || "",
-        twitter_url: contactInfo.twitter_url || "",
+        Facebook_url: contactInfo.Facebook_url || "",
         address_en: contactInfo.address_en || "",
         address_th: contactInfo.address_th || "",
         is_active: contactInfo.is_active !== undefined ? contactInfo.is_active : true,
@@ -186,16 +186,16 @@ export default function AdminSettings() {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="twitter_url" className="text-foreground">
-              Twitter URL
+            <Label htmlFor="Facebook_url" className="text-foreground">
+              Facebook URL
             </Label>
             <Input
-              id="twitter_url"
-              name="twitter_url"
-              value={formData.twitter_url}
+              id="Facebook_url"
+              name="Facebook_url"
+              value={formData.Facebook_url}
               onChange={handleChange}
               className="bg-background border-border"
-              placeholder="https://twitter.com/username"
+              placeholder="https://Facebook.com/username"
             />
           </div>
 

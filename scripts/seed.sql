@@ -180,7 +180,7 @@ INSERT INTO portfolio_projects (title_en, title_th, description_en, description_
 -- =============================================
 -- CONTACT INFO DATA
 -- =============================================
-INSERT INTO contact_info (name_en, name_th, phone, email, github_url, linkedin_url, twitter_url) VALUES
+INSERT INTO contact_info (name_en, name_th, phone, email, github_url, linkedin_url, Facebook_url) VALUES
 (
   'kiatsakul paiyasen',
   'เกียรติสกุลไพยเสน',
@@ -188,7 +188,7 @@ INSERT INTO contact_info (name_en, name_th, phone, email, github_url, linkedin_u
   'john.doe@email.com',
   'https://github.com',
   'https://linkedin.com',
-  'https://twitter.com'
+  'https://Facebook.com'
 );
 
 -- =============================================

@@ -5,19 +5,19 @@ async function insertContactInfo() {
     const data = {
       name_en: "kiatsakul paiyasen",
       name_th: "เกียรติสกุล ไพยเสน",
-      phone: "+66 12 345 6789",
-      email: "john.doe@email.com",
+      phone: "063-973-0076",
+      email: "kiasakul2905@email.com",
       github_url: "https://github.com",
       linkedin_url: "https://linkedin.com",
-      twitter_url: "https://twitter.com",
+      Facebook_url: "https://Facebook.com",
       address_en: null,
       address_th: null,
       is_active: true,
     }
 
     const result = await sql`
-      INSERT INTO contact_info (name_en, name_th, phone, email, github_url, linkedin_url, twitter_url, address_en, address_th, is_active)
-      VALUES (${data.name_en}, ${data.name_th}, ${data.phone}, ${data.email}, ${data.github_url}, ${data.linkedin_url}, ${data.twitter_url}, ${data.address_en}, ${data.address_th}, ${data.is_active})
+      INSERT INTO contact_info (name_en, name_th, phone, email, github_url, linkedin_url, Facebook_url, address_en, address_th, is_active)
+      VALUES (${data.name_en}, ${data.name_th}, ${data.phone}, ${data.email}, ${data.github_url}, ${data.linkedin_url}, ${data.Facebook_url}, ${data.address_en}, ${data.address_th}, ${data.is_active})
       RETURNING *
     `
 
