@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useI18n } from "@/lib/i18n"
 import { usePortfolio } from "@/hooks/use-portfolio-data"
 import { Button } from "@/components/ui/button"
@@ -39,8 +40,17 @@ export function PortfolioPreview() {
               key={project.id}
               className="group rounded-xl bg-card border border-border hover:border-primary/50 transition-colors overflow-hidden"
             >
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <FolderOpen className="h-12 w-12 text-muted-foreground" />
+              <div className="aspect-video bg-muted flex items-center justify-center relative overflow-hidden">
+                {project.image_url ? (
+                  <Image
+                    src={project.image_url}
+                    alt={language === "en" ? project.title_en : project.title_th}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <FolderOpen className="h-12 w-12 text-muted-foreground" />
+                )}
               </div>
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between gap-2">
