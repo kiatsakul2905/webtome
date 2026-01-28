@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const notoSansThai = Noto_Sans_Thai({ subsets: ["thai"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: 'John Doe | Full Stack Developer',
+  title: 'Kiatsakul | Full Stack Developer',
   description: 'Personal portfolio showcasing my work and skills as a Full Stack Developer',
   generator: 'v0.app',
   icons: {
