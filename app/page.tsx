@@ -3,7 +3,7 @@ import { ExperiencePreview } from "@/components/experience-preview"
 import { EducationPreview } from "@/components/education-preview"
 import { SkillsPreview } from "@/components/skills-preview"
 import { PortfolioPreview } from "@/components/portfolio-preview"
-
+import { CertificatesPreview } from "@/components/certificate-preview"
 export default function HomePage() {
   return (
     <>
@@ -12,6 +12,7 @@ export default function HomePage() {
       <EducationPreview />
       <SkillsPreview />
       <PortfolioPreview />
+      <CertificatesPreview />
     </>
   )
 }

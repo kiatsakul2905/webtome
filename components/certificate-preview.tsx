@@ -3,13 +3,13 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useI18n } from "@/lib/i18n"
-import { usePortfolio } from "@/hooks/use-portfolio-data"
+import { useCertificates, usePortfolio } from "@/hooks/use-portfolio-data"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, FolderOpen, ExternalLink } from "lucide-react"
 
 export function CertificatesPreview() {
   const { language, t } = useI18n()
-  const { projects, isLoading } = usePortfolio()
+  const { projects, isLoading } = useCertificates()
   const previewItems = (projects || []).slice(0, 3)
 
   return (
@@ -57,17 +57,6 @@ export function CertificatesPreview() {
                   <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {language === "en" ? project.title_en : project.title_th}
                   </h3>
-                  {project.project_link && (
-                    <a
-                      href={project.project_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                      aria-label="View project"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
-                  )}
                 </div>
                 <p className="text-sm text-muted-foreground line-clamp-2">
                   {language === "en" ? project.description_en : project.description_th}
