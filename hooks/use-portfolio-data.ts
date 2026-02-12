@@ -7,6 +7,7 @@ import type {
   SkillCategory,
   Skill,
   PortfolioProject,
+  Certificates,
   ContactInfo,
   SiteSettings,
 } from "@/lib/db"
@@ -57,6 +58,15 @@ export function useSkills() {
 export function usePortfolio() {
   const { data, error, isLoading } = useSWR<PortfolioProject[]>(
     "/api/portfolio",
+    fetcher,
+    swrConfig
+  )
+  return { projects: data, error, isLoading }
+}
+
+export function useCertificates() {
+  const { data, error, isLoading } = useSWR<Certificates[]>(
+    "/api/certificates",
     fetcher,
     swrConfig
   )

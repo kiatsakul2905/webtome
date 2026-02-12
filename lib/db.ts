@@ -118,3 +118,17 @@ export interface SiteSettings {
   intro_video_url: string | null
   video_thumbnail_url: string | null
 }
+export interface Certificates {
+  id: number
+  title_en: string
+  title_th: string
+  description_en: string
+  description_th: string
+  image_url: string | null
+  technologies: string[]
+  is_featured: boolean
+  sort_order: number
+  is_active: boolean
+  created_at?: string
+  updated_at?: string
+}

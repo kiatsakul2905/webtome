@@ -18,6 +18,7 @@ const translations = {
     "nav.skills": "Skills",
     "nav.portfolio": "Portfolio",
     "nav.contact": "Contact",
+    "nav.certificates": "Certificates",
     
     // Hero
     "hero.greeting": "Hello, I'm",
@@ -33,6 +34,8 @@ const translations = {
     "section.skills": "Skills",
     "section.portfolio": "Portfolio",
     "section.viewMore": "View More",
+    "section.certificates": "Certificates",
+
     
     // Experience
     "exp.present": "Present",
@@ -69,6 +72,7 @@ const translations = {
     "nav.skills": "ทักษะ",
     "nav.portfolio": "ผลงาน",
     "nav.contact": "ติดต่อ",
+    "nav.certificates": "ใบรับรอง",
     
     // Hero
     "hero.greeting": "สวัสดีครับ, ผมชื่อ",
@@ -84,6 +88,7 @@ const translations = {
     "section.skills": "ทักษะ",
     "section.portfolio": "ผลงาน",
     "section.viewMore": "ดูเพิ่มเติม",
+    "section.certificates": "ใบรับรอง",
     
     // Experience
     "exp.present": "ปัจจุบัน",

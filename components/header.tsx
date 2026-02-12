@@ -19,6 +19,7 @@ export function Header() {
     { href: "/education", label: t("nav.education") },
     { href: "/skills", label: t("nav.skills") },
     { href: "/portfolio", label: t("nav.portfolio") },
+    { href: "/certificates", label: t("nav.certificates") },
     { href: "/#contact", label: t("nav.contact") },
   ]
 

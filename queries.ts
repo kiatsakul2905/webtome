@@ -3,6 +3,7 @@ import type {
   Experience,
   Education,
   PortfolioProject,
+  Certificates,
   ContactInfo,
   SkillCategory,
   Skill,
@@ -79,6 +80,20 @@ export async function getSkills() {
     return groupedSkills;
   } catch (error) {
     console.error("Error fetching skills:", error);
+    return [];
+  }
+}
+
+export async function getCertificates() {
+  try {
+    const rows = await sql`
+      SELECT * FROM certificates
+      WHERE is_visible = true 
+      ORDER BY sort_order ASC
+    `;
+    return rows as PortfolioProject[];
+  } catch (error) {
+    console.error("Error fetching certificates:", error);
     return [];
   }
 }
