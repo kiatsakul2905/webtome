@@ -71,7 +71,7 @@ export function HeroSection() {
               </Button>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/kiatsakul2905"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10"
@@ -80,7 +80,7 @@ export function HeroSection() {
                   <Github className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/%E0%B8%98%E0%B8%99%E0%B8%A7-%E0%B8%99%E0%B8%A8%E0%B8%97-%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%AA%E0%B8%81%E0%B8%B8%E0%B8%A5-%E0%B9%84%E0%B8%9E%E0%B8%A2%E0%B9%80%E0%B8%AA%E0%B8%99-805b943a8/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10"
@@ -89,7 +89,7 @@ export function HeroSection() {
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/kiatsakul.paiyasen?locale=th_TH"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10"
