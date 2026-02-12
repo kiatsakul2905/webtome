@@ -32,13 +32,13 @@ export function Footer() {
     social: {
       github: dbContactInfo.github_url || "",
       linkedin: dbContactInfo.linkedin_url || "",
-      Facebook: dbContactInfo.Facebook_url || "",
+      facebook: dbContactInfo.facebook_url || "",
     },
   } : {
     name: { en: "Contact Us", th: "ติดต่อเรา" },
     email: "",
     phone: "",
-    social: { github: "", linkedin: "", Facebook: "" },
+    social: { github: "", linkedin: "", facebook: "" },
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -212,11 +212,11 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href={contactInfo.social.Facebook}
+                href={contactInfo.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-background border border-border text-muted-foreground hover:text-foreground hover:border-foreground transition-colors"
-                aria-label="Facebook"
+                aria-label="facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>

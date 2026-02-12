@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS contact_info (
   email VARCHAR(255) NOT NULL,
   github_url VARCHAR(500),
   linkedin_url VARCHAR(500),
-  Facebook_url VARCHAR(500),
+  facebook_url VARCHAR(500),
   address_en TEXT,
   address_th TEXT,
   is_active BOOLEAN DEFAULT true,

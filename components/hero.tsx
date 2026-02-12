@@ -89,11 +89,11 @@ export function HeroSection() {
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://Facebook.com"
+                  href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10"
-                  aria-label="Facebook"
+                  aria-label="facebook"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>

@@ -20,6 +20,6 @@ export const contactInfo = {
   social: {
     github: "",
     linkedin: "",
-    Facebook: "",
+    facebook: "",
   },
 }
